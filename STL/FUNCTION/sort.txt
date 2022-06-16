@@ -1,0 +1,49 @@
+=> sort()
+
+->This function can be used to sort an array or a vector or a string
+->This sorting algorithm is called the gcc_sort which is a hybrid algorithm which is mixture of three algorithms that are quick sort,
+  insertion sort and heap sort.
+ -> TIME COMPLEXITY is O(NlogN)
+ 
+ usage:
+ 
+ ->int a[n];         ------------->   sort(a,a+n);
+ 
+ -> vector <int> v;  ------------->   sort(v.begin(),v.end());
+ 
+ -> string s;        ------------->   sort(s.begin(),s.end());
+   
+   
+  * sort(a,a+n)  basically means sort(pointer to 1st element,pointer to last element + 1);
+   
+  EXAMPLE : 
+  
+  if we have an array a = {5,4,1,2} and we want to sort upto 1 (i.e.index 2) then we need to write:
+  sort(a,a+3);        //this sorts from 5 to 1      
+  
+  
+  CODE:
+  
+  #include <bits/stdc++.h>
+  using namespace std;
+  
+  int main(){
+        int a[4] = {5,4,1,2};
+        sort(a,a+3);    //sorting till 3rd element
+        
+        for(int i = 0;i < 4 ;i++){
+              cout << a[i] << " ";
+         }
+         cout << endl;
+         
+        sort(a,a+4);  //sorting entire array
+        
+        for(int i = 0;i < 4 ;i++){
+              cout << a[i] << " ";
+         }
+         
+}
+
+OUTPUT :
+1 4 5 2
+1 2 4 5
