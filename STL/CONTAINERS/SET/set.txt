@@ -1,0 +1,25 @@
+SET:
+->set store data type in a sorted order 
+->all elements in set have unique values
+->values are immutable. this means that once we add a value in set then it cannot be modified.
+  however we can remove that element and then add a modified value.
+->set follows Binary Search Tree implementation.
+-> values in set are unindexed
+->we need to include header file known as <set> to implement set
+
+
+SYNTAX:
+set<int> s; //creates empty set of integers
+set<string> s;  //empty set of strings
+
+
+To store values in set in DESCENDING ORDER : 
+we can use the syntax:
+set<int,greater<int>> setname;        //we can use other datatypes also instead of integer
+
+IMPORTANT FUNCTIONS OF SET:
+->s.insert(x) - insert the value x into set and it does nothing if value is already present. TIME COMPLEXITY : O(log N)
+->s.erase(x) - erase the value x from set if present. TIME COMPLEXITY : O(log N)
+->s.count(x) - returns 0 if x is not in set and 1 if x is in set. TIME COMPLEXITY : O(log N)
+->s.clear() - erase all elements. O(N)
+->s.size() - returns the current size of the set. O(1)
