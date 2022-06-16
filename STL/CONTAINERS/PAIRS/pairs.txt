@@ -1,0 +1,22 @@
+=> PAIRS:
+->Pair is a way of creating a composite datatype composed of 2 different primitive/composite datatypes.
+
+syntaxs:
+
+pair <int,int> p;  //pair p of 2 integers
+pair <int,string> p;  //pair p of an int and a string
+pair <int,pair<int,string>> p;   //a pair of int and (pair of int and string)
+pair <vector <int>,string> p;   // a pair of a (vector of int) and a string 
+
+
+
+-> ACCESSING ELEMENTS:
+-elements in a pair can be accessed by using .first and .second
+-for eg:
+pair <string,int> p = {"Hello",6};
+cout << p.first << " " << p.second;       //this will pring hello 6
+
+
+-> USES OF PAIR
+-a function can return only a single value but using a pair we can return multiple values
+ from a single function.
