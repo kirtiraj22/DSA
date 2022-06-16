@@ -1,0 +1,14 @@
+-> vectors are a part of STL.
+-> they are dynamic arrays.
+->basic syntax of vector is:
+
+vector <int> v;   //it is a vector of integers and is named as v
+vector <int> v(10);  //vector of int with size of 10 and all elements initialised as 0
+vector <char> v(10,'h');  //vector of string with 10 elements and all of them are 'h'
+
+=> some important functions of vectors:
+-> v.push_back(x)  //this helps to insert value of x to end of vector in O(1) time complexity
+-> v.pop_back()    //this erases the last element in O(1) time complexity
+-> v.clear()   //this erase all elements in O(n) time complexity
+-> v.size()   //returns size of vector in O(1)
+-> cout << v[0];   //this will print element at zeroth index in a vector
