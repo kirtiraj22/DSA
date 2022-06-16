@@ -1,6 +1,6 @@
 => PAIRS:
 ->Pair is a way of creating a composite datatype composed of 2 different primitive/composite datatypes.
-
+-> to include pairs we need to include a header file called as <utility> 
 syntaxs:
 
 pair <int,int> p;  //pair p of 2 integers
