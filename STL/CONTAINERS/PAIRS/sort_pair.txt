@@ -1,0 +1,17 @@
+SORTING ARRAYS / VECTORS OF PAIRS 
+=>for eg we have an array of pairs
+pair<int,int> p[5];   //an array of 5 pairs of integers
+p[0] = {1,2};
+p[1] = {5,2};
+p[2] = {8,1};
+p[3] = {1,0};
+p[4] = {3,4};
+
+now lets sort this array
+
+sort(p,p+5);
+
+so array becomes : [{1,0},{1,2},{3,4},{5,2},{8,1}]
+
+so sorting is done by comparing the first element.
+NOTE: if first elements of two pairs are equal then compare the second element.
