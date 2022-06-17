@@ -1,0 +1,63 @@
+MAP:
+they can be thought as special arrays in which the indices(keys) of elements can be:
+  -negative
+  -very big
+  -strings
+  
+MAP are like dictonaries that are present in python. they have keys and their corresponding values.
+
+
+SYNTAX:
+map<key_datatype,value_data_type> m;
+eg:
+map<string,int> m;      //here keys will have string and values will have ints
+
+so we can use it as:
+m["hello"] = 50;
+m["world"] = 12;
+
+cout << m["hello'] << " " << m["world"];      //output : 50 12
+
+-negative integers are also valid.
+eg: 
+map<int,int> m;
+m[-1] = 40;     //so negative ints are also valid as keys
+
+NOTE : maps are very similar to sets,in sets the values are unique and sorted.
+       in maos the keys are unique and sorted.
+       
+MOST IMPORTANT USE OF MAP IS TO COUNT FREQUENCY OF VARIOUS OBJECTS.
+
+NOTE : strings are stored in lexicographical order(i.e the way they are present in english dictonary)
+
+FUNCTIONS AVAILABLE:
+m.clear()  - clears a map
+m.[key]    - value of element with key.
+m.count(key)  - counts the number of time key occurs
+m.find(key)   - returns the iterator to the position where key is present
+m.erase(key)  -removes the key(element at any specific position)
+m.lower_bound(key)  - returns iterator pointing to the key in the container which is equivalent to key passed in parameter
+
+
+NOTE : map iterator behave similar to set iterators but upon doing *it we get a pair of {key,value} instead of getting 
+       only value.
+       
+TO GET INDIVIDUAL KEYS AND VALUES WE CAN WRITE :
+(*it).first and (*it).second 
+OR we can also write 
+it->first       //for key
+it->second      //for value
+
+
+NOTE : if key is not present then it will be instantaly created with value = 0
+eg:
+map<int,int> m;
+cout << m.size();   //here output is 0 as size is 0
+cout << m[15];      //here output is 0 as it is instantly created and now size is 1
+cout << m.size();   //here output is 1 
+
+if we assign value like:
+m[10] = 4;
+this means key is 10 and value assigned to it is 4
+cout << m[10];    //this will output 4 as answer
+
