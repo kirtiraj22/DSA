@@ -1,0 +1,29 @@
+SET ITERATORS:
+-they offer less features than vector iterators.
+-syntax for set iterators is:
+
+auto it = s.begin();      //here it is iterator to the first element
+
+it++,it--,++it,--it are valid operations and they work in O(logN) time
+
+NOTE: (it + 5) or it+=2 ,etc are invalid.
+NOTE: s.end() is the iterator to a non existent element (after the last element)
+
+
+IMPORTANT FUNCTIONS for set iterators
+
+s.find(x);  //returns iterator to element with value x. and returns s.end() if not found.works in O(logN)
+s.lower_bound(x);   //returns iterator to the first element which is >= x. returns s.end() if not found.works in O(logN)
+s.upper_bound(x);   //returns iterator to the first element which is > x. returns s.end() if not found.works in O(logN)
+s.erase(x);    //erases the element with operator it. O(logN)
+
+
+note:
+if(s.find(10) == s.end()) cout << "not found";
+if(s.count(10) == 0) cout << "not found";
+
+both of them are same.as s.end() is the iterator to a NON-EXISTENT element(after the last element).
+
+NOTE :
+-to remove smallest element from set use:
+s.erase(s.begin());
