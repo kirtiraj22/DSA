@@ -1,0 +1,19 @@
+switch case works like if-else conditions
+
+syntax of switch case is given by:
+
+switch(expression)
+{
+  case constant:
+        //do something 
+        break;        //break is optional
+  case constant2:
+         //do something
+         break;
+  .
+  .
+  .
+  .
+  default:
+       //do something
+}
