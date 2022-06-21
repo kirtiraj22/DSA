@@ -7,10 +7,10 @@ using namespace std;
 
 bool isEven(int a){
     if(a & 1){                  //if number is odd then it condition will be true 
-        return 1;               
+        return 0;               
     }
     else 
-        return 0;
+        return 1;
 }
 
 int main(){
@@ -21,6 +21,6 @@ int main(){
 }
 
 
-//if answer is odd then it will return 1(false) else it will return 0(true) because we are checking even
-//NOTE 7 & 1 = 0(true) so if statement will get executed and 1 will be returned to main
-//8 & 1 = 1(false) so if will not be executed and else will be executed and 0 would be returned
+//if answer is odd then it will return 0 else it will return 1 
+//NOTE 7 & 1 = 0(true) so if statement will get executed and 0 will be returned to main
+//8 & 1 = 1(false) so if will not be executed and else will be executed and 1 would be returned
