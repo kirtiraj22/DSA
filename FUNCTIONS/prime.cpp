@@ -17,7 +17,7 @@ bool checkPrime(int n){
 int main(){
     int num;
     cin >> num;
-    if(checkPrime(num)){
+    if(checkPrime(num)){                //if condition is true that is if 1 is returned from the function than prime
         cout << "Number is prime";
     }
     else{
