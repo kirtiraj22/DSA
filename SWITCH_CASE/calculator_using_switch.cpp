@@ -6,7 +6,13 @@ int main(){
     int num1;
     int num2;
     char op;
-    cin >> num1 >> num2 >> op;
+    cout << "Enter number 1:" << endl;
+    cin >> num1;
+    cout << "Enter number 2:" << endl;
+    cin >> num2;
+    cout << "Enter an operator" << endl;
+    cin >> op;
+    
 
     switch(op){
         case '+':
