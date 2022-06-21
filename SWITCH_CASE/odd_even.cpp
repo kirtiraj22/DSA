@@ -16,8 +16,13 @@ bool isEven(int a){
 int main(){
     int num;
     cin >> num;
-    int ans = isEven(num);
-    cout << ans;
+    if(isEven(num)){            //FALSE means any number other than 0 so if it gets 1 then condition is false
+        cout << "Number is even" << endl;
+    }
+    else{
+        cout << "Number is odd" << endl;
+    }
+    return 0;
 }
 
 
