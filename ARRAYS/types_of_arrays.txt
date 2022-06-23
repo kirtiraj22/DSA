@@ -1,0 +1,17 @@
+we can make arrays of different data types
+eg:
+
+1)array of integers
+int arr[5] = {1,2,3,4,5};
+
+2)array of characters
+char array[5] = {'a','2','c','d','5'}
+
+3)array of double
+double arr3[5];
+
+4)array of boolean
+bool arr4[5];
+
+5)array of float 
+float arr5[5];
