@@ -45,3 +45,21 @@ int main(){
     cout << "minimum is : " << getmin(arr,size) << endl;
     return 0; 
 }
+
+
+/*NOTE: instead of writing  
+for(int i = 0; i < size; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+ 
+ we can also write 
+ maximum = MIN_INT;
+ for(int i = 0; i < size; i++){
+    maximum = max(maximum,arr[i]);
+ }
+ max(a,b) is a predifined function that can find maximum number from given two numbers a and b
+ 
+ similarly for minimum we can write min(a,b);
+ */
