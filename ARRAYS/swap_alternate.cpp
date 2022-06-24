@@ -2,6 +2,10 @@
 // input : {1,2,3,4,5,6}
 // output : {2,1,4,3,6,5}
 
+#include <iostream>
+
+using namespace std;
+
 int swapAlternative(int arr[],int size){
     for(int i=0; i < size; i+=2){
         //this condition will check whether the current 
