@@ -33,7 +33,18 @@ int main(){
     printArray(arr,size);
 }
 
-/*OUTPUT:
+/*
+NOTE:
+instead of swap(arr[i],arr[i+1],
+we can use:
+temp = arr[i];
+arr[i] = arr[i+1];
+arr[i+1] = temp;
+*/
+
+
+/*
+OUTPUT:
 Enter size : 5
 Enter array elements : 1 2 3 4 5
 After swapping elements : 2 1 4 3 5 
