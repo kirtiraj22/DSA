@@ -1,0 +1,41 @@
+BINARY SEARCH:
+
+-Binary search is a searching algorithm used in a sorted array by repeatedly dividing the search 
+ interval in half.
+-It works only if elements are in monotonous order(increasing order or decreasing order)
+
+EG:         3 5 9 13 27
+indexing :  0 1 2 3  4
+target:13
+
+so we need to find 13 in this array
+
+STEPS:
+1)find the mid element of array (in this case it is 9)
+2)compare it with the target ( here target = 13 so target != 9)
+3)now check if middle number is smaller or greater than the target (here 9 is smaller than the target)
+4)remove all elements from left if the element is smaller than target 
+OR remove all elements from right if the element is greater  than target
+5)again repeat from step 1.
+
+so given example :
+target = 13
+
+NOTE MIDDLE ELEMENT = (starting index + ending index) / 2
+
+array   3 5 9 13 27 
+index   0 1 2 3  4
+here target = 13 and middle element = 9 so remove all elements from left
+         
+         |
+         V
+array   13 27
+index   3  4
+here target = 13 middle element = 13 so target found at index 3
+          |
+          V
+array   13
+
+so return index(i.e 3)
+
+so target found
