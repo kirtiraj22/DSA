@@ -11,19 +11,19 @@ int PrintArray(int arr[],int size){
 
 //eg : 2 , 4 , 5 , 6 , 8
 int BinarySearch(int arr[],int size,int target){
-  int first = 0;
-  int last = size-1;
+  int start = 0;
+  int end = size-1;
 
-  while(first <= last){  
-    int middle = (first + last )/ 2;
+  while(start <= end){  
+    int middle = start + ((end - start) / 2);
     if(arr[middle] == target){
       return middle;
     }
     else if(arr[middle] < target){
-      first = middle+1;
+      start = middle+1;
     }
     else{
-      last = middle - 1;
+      end = middle - 1;
     }
   }
   return -1;
@@ -46,6 +46,20 @@ int main(){
 
 
 //TIME COMPLEXITY : O(log n)
+
+/*NOTE : In line number 18 we have used start + ((end - start)/2) INSTEAD of (start + end)/2
+This is because if out start = 2^31 - 1 and end = 2^31 -1 then the result of start + end will 
+get overflowed.
+so to avoid it we use start  + ((end - start)/2)
+so   middle = start + ((end - start)/2)
+            = start + (end/2) - (start/2)
+            = start - (start/2) + (end/2)
+            = (2start - start)/2 + end/2
+            = (start + end)/2
+            
+so atleast last we get the same thing but in more optimised manner
+*/
+
 
 /*
 INPUT :
